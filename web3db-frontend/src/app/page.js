@@ -5,7 +5,7 @@ const Home = () => {
     <div>
       <Navbar />
 
-      <div class="home">
+      <div className="home">
         <h1>What is Health3App?</h1>
         <p>
           The Health3App allows for more secure, interoperable, and efficient

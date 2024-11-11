@@ -98,3 +98,25 @@ input[type=checkbox] {
 input[type=file] {
   margin: 10px;
 }
+
+.profilecard {
+  background-color: #908e8e;
+  width:  50%;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  border-radius: 5px;
+}
+
+ul li {
+  margin: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 30px;
+}
