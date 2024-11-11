@@ -20,7 +20,9 @@ const MyProfile = () => {
                     <li>Condition 2</li>
                     <li>Condition 3</li>
                 </ul>
+                <button className="add">Add Medical Condition</button>
             </div>
+
 
             <br/>
         </div>
