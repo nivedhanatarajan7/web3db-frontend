@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 const MyProfile = () => {
     return (
@@ -20,7 +21,9 @@ const MyProfile = () => {
                     <li>Condition 2</li>
                     <li>Condition 3</li>
                 </ul>
-                <button className="add">Add Medical Condition</button>
+                <Link href="/add-medical">
+                    <button className="add">Add Medical Condition</button>
+                </Link>
             </div>
 
 
