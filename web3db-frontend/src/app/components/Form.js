@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react'
+import './Form.css'
 
 const Form = () => {
 
@@ -8,7 +9,6 @@ const Form = () => {
 
     const handleChange = (e) => {
         setForm({...form, data: e.target.value})
-        console.log(form.data)
     }
 
     const handleSubmit = (e) => {
@@ -22,19 +22,23 @@ const Form = () => {
     }
 
     return (
-        <div>
+        <div className='medical-form-container'>
             <form onSubmit={handleSubmit}>
+                <label className='medical-form-container'>Enter Data:</label>
                 <div>
-                    <label>Enter Data:</label>
-                    <input 
+                    
+                    <textarea
+                        className='medical-text-area'
                         type="text"
+                        rows={4}
+                        cols={50}
                         value={form.data}
                         onChange={handleChange}
                         required
                     />
                 </div>
 
-                <div>
+                <div className='medical-form-container'>
                     <button type='submit' disabled={submitting}>
                         {submitting ? 'Submitting...' : 'Submit'}
                     </button>
