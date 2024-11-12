@@ -13,5 +13,6 @@
 .medical-text-area {
     resize: vertical;
     height: 100px;
+    width: 700px;
     max-height: 1000px;
 }
